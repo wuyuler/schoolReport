@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dbFF33" >
+    <TextView 
+        android:id="@+id/tv_onename"
+        android:layout_width = "wrap_content"
+        android:layout_height="wrap_content"
+		android:text="姓名"
+        android:textSize = "40dp"
+        android:layout_gravity="left"   
+        android:layout_marginRight="40dp"   
+        android:layout_marginTop="20dp"
+        />
+    <TextView 
+        android:id="@+id/tv_onesex"
+        android:layout_width = "wrap_content"
+        android:layout_height="wrap_content"
+		android:text="性别"
+        android:textSize = "30dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="left"      
+        />
+    <TextView 
+        android:id="@+id/tv_personalid"
+        android:layout_width = "wrap_content"
+        android:layout_height="wrap_content"
+		android:text="学号"
+        android:textSize = "30dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="left"      
+        />
+    <TextView 
+        android:id="@+id/tv_personalclass"
+        android:layout_width = "wrap_content"
+        android:layout_height="wrap_content"
+		android:text="班级"
+        android:textSize = "30dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="left"      
+        />
+    <Spinner 
+        android:id="@+id/spi_per_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_personsubject1"
+        android:layout_width = "wrap_content"
+        android:layout_height="wrap_content"
+		android:text="各科成绩"
+        android:textSize = "20dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="left"      
+        />
+    <TextView 
+        android:id="@+id/tv_personsumandave1"
+        android:layout_width = "wrap_content"
+        android:layout_height="wrap_content"
+		android:text="总分平均分"
+        android:textSize = "20dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="left"      
+        />
+    
+    
+<Spinner 
+        android:id="@+id/spi_per_sub"
+        android:layout_width="wrap_content"
+        
+        android:layout_height="wrap_content"
+        
+        />
+ <EditText 
+        android:id="@+id/edt_per_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="新分数"
+        android:inputType="number"
+        />
+    <Button 
+        android:id="@+id/btn_per_modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改"
+        android:background="@drawable/button"
+        />
+   
+   
+    
+    
+
+</LinearLayout>

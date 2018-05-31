@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#dbFF33"
+    >
+    
+    
+    
+    <RelativeLayout 
+       android:layout_width="fill_parent"
+		android:layout_height="45dp"
+		android:background="#2ee4d5"
+       
+       >
+
+
+       
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="数据更新"
+           android:textSize="20sp"
+           android:layout_centerVertical="true"
+           
+           />
+   </RelativeLayout>
+    
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+			 android:layout_gravity="center"
+             android:text="开放学期"
+             android:textSize="20sp" />
+
+         <Spinner
+             android:id="@+id/spi_man_term"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical" />
+     </LinearLayout>
+    <Button 
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        
+        android:layout_height="wrap_content"
+       android:background="@drawable/button"
+        
+        android:text="更新"
+        
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		
+        <TableRow
+            android:id="@+id/tableRow0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <TextView 
+                
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学号:"
+                />
+            <EditText 
+                android:id="@+id/insert_edt_id"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+            	
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <TextView 
+                
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名:"
+                />
+            <EditText 
+                android:id="@+id/insert_edt_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                />
+            	
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+             <TextView 
+                
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别:"
+                />
+            <RadioGroup  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/sex_rg"  
+        android:orientation="horizontal">  
+        <RadioButton  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="男"  
+            android:id="@+id/male_rb"
+            android:checked="true"/>  
+        <RadioButton  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="女"  
+            android:id="@+id/famale_rb"/>  
+    </RadioGroup>  
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView 
+                
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="班级:"
+                />
+            <RadioGroup  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/class_rg"  
+        android:orientation="horizontal">  
+        <RadioButton  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="161"  
+            android:id="@+id/class_161_rb"
+            android:checked="true"/>  
+        <RadioButton  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="162"  
+            android:id="@+id/class_162_rb"/>
+        <RadioButton  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="163"  
+            android:id="@+id/class_163_rb"/>   
+    </RadioGroup> 
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <Button 
+                
+                android:id="@+id/insert_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="插入"
+                android:background="@drawable/button"
+                />
+        </TableRow>
+         <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+             
+<!--               <TextView  -->
+<!--                 android:id="@+id/insert_test" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="测试" -->
+<!--                 /> -->
+              
+           
+        </TableRow>
+         <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView 
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学号:"
+                />
+            <EditText 
+                android:id="@+id/dele_edt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+            
+           
+        </TableRow>
+        <TableRow 
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <Button 
+                android:id="@+id/dele_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:background="@drawable/button"
+                />
+            
+        </TableRow>
+        <TableRow 
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></TableRow>
+    </TableLayout>
+
+</LinearLayout>
